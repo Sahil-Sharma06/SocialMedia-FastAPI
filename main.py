@@ -21,7 +21,7 @@ async def posts():
     return {"data" : "These are your posts..."}
 
 
-@app.post("/createposts")
+@app.post("/posts")
 async def create_post(new_post: Post):
     print(new_post)
     print(new_post.dict())
